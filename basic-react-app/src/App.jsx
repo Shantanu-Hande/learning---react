@@ -1,7 +1,7 @@
 
 import './App.css'
 
-import ProductTab from './ProductTab.jsx'
+import ProductTab from './components/ProductTab.jsx'
 
 
 
