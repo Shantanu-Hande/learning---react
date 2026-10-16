@@ -1,9 +1,14 @@
 import React from 'react'
+import { jobs } from './data/jobs'
+import Card from './components/Card'
+
 
 const App = () => {
   return (
-    <div className='parentgit '>
-      App
+    <div className='parent'>
+      {jobs.map((jobs) => {
+        return <Card  key={jobs.id} job={jobs}/>
+      })}
     </div>
   )
 }
