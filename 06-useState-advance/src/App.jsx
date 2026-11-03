@@ -1,19 +1,13 @@
-import React, { useState } from 'react'
 // import Counter from './components/Counter'
+import LikeButton from './components/LikeButton'
+
 
 const App = () => {
 
-  const[count,setCount]=useState(0)
-
   return (
-    <div className='main'>
+    <div className='h-screen w-full flex items-center justify-center'>
       {/* <Counter/> */}
-      <div className="counter">{count}</div>
-      <div className="options">
-        <button className='increment'>Increment</button>
-        <button className='decrement'>Decrement</button>
-        <button className='reset'>Reset</button>
-      </div>
+      <LikeButton/>
     </div>
   )
 }
