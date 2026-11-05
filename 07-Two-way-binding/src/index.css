@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(53, 46, 46);
+}
+
+form{
+    margin-top: 200px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 20px;
+    padding: 10px 12px; 
+    font-size: medium;
+}
+
+button{
+    margin: 10px;
+    padding: 10px 12px; 
+    font-size: medium;
+    border-radius: 20px;
+    border: 1px solid black;
+}
