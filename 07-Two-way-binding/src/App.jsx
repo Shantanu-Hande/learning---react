@@ -1,28 +1,9 @@
-import React, { useState, useSyncExternalStore } from 'react'
+import Show_Hide_Password from './Show_Hide_Password'
 
 const App = () => {
-
-  const[title,setTitle]=useState("")
-
-
-  const submitHandler = (e) => {
-    e.preventDefault()
-    console.log(`Form Submitted by ${title}`)
-
-    setTitle("")
-  }
-
   return (
-    <div>
-      <form onSubmit={(e) => submitHandler(e)}>
-        <input 
-          type="text" 
-          placeholder='Enter a text'
-          value={title}
-          onChange={(e) => 
-          setTitle(e.target.value)} />
-        <button>Submit</button>
-      </form>
+    <div className='h-screen w-full flex items-center justify-center'>
+      <Show_Hide_Password/>
     </div>
   )
 }
