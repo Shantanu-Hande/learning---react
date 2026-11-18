@@ -4,7 +4,7 @@ const App = () => {
   const [heading, setHeading] = useState("");
   const [details, setDetails] = useState("");
 
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(JSON.parse(localStorage.getItem("task")) || []);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -12,6 +12,7 @@ const App = () => {
     const copyTask = [...task];
     copyTask.push({ heading, details });
     setTask(copyTask);
+    localStorage.setItem("task",JSON.stringify(copyTask))
 
     setHeading("");
     setDetails("");
@@ -21,8 +22,13 @@ const App = () => {
     const copyTask = [...task]
     copyTask.splice(idx,1)
     setTask(copyTask)
+
+    localStorage.setItem("task",JSON.stringify(copyTask))
+
     console.log("Note Deleted")
   }
+
+  
 
   return (
     <div className="h-screen lg:flex bg-black text-white">
