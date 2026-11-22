@@ -71,7 +71,7 @@ const App = () => {
                 </h1>
 
                 {/* Details */}
-                <p className="mt-3 text-sm font-semibold leading-relaxed break-word [overflow-wrap:anywhere] flex-1 overflow-y-auto w-full">
+                <p className="mt-3 text-sm font-semibold leading-relaxed break-word flex-1 overflow-y-auto w-full">
                   {el.details}
                 </p>
 
