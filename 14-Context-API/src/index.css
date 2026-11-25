@@ -1,0 +1,41 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.light{
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  background-color: teal;
+  align-items: center;
+}
+
+.dark{
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  background-color: gray;
+  align-items: center;
+}
+
+.nav2{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn{
+  padding: 5px 10px;
+  background: gray;
+  color: black;
+  margin: 5px;
+}
